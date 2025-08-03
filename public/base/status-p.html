@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/global_css.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <button
+        class="bg-sky-500 px-4 py-2 text-white rounded-3xl hover:bg-amber-400 focus:outline-2 focus:outline-offset-2 active:bg-violet-700"
+      >
+        save this button
+      </button>
+
+      <button
+        class="px-4 py-2 bg-yellow-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-red-700"
+      >
+        save this button
+      </button>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Published status</legend>
+        <input
+          id="draft"
+          class="peer/draft"
+          type="radio"
+          name="status"
+          checked
+        />
+        <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
+        <input
+          id="published"
+          class="peer/published"
+          type="radio"
+          name="status"
+        />
+        <label for="published" class="peer-checked/published:text-sky-500"
+          >Published</label
+        >
+        <div class="hidden peer-checked/draft:block">
+          Drafts are only visible to administrators.
+        </div>
+        <div class="hidden peer-checked/published:block">
+          Your post will be publicly visible on your site.
+        </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <button class="hover:bg-blue-500">open dialog</button>
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="search"
+        class="border focus:border-sky-500"
+      />
+    </div>
+    <div>
+      <input type="checkbox" name="ch" class="checked:bg-red-600" />
+      <label for="ch">checkbox</label>
+    </div>
+
+    <div class="group">
+      <div class="opacity-0 group-hover:opacity-100">我是隐藏内容</div>
+    </div>
+
+    <div>
+      <button
+        type="button"
+        class="bg-violet-500 text-white font-semibold rounded-lg p-3 transition-all duration-200 hover:bg-violet-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-opacity-75 active:bg-violet-700 active:scale-95"
+      >
+        Save Changes
+      </button>
+    </div>
+  </body>
+</html>
