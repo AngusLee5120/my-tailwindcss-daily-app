@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/global_css.css" rel="stylesheet" />
+    <title>响应式布局</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gray-200">
+    <article
+      class="mx-auto max-w-md overflow-hidden bg-white rounded-xl shadow-md md:max-w-2xl"
+    >
+      <!-- 使用grid替代flex布局 -->
+      <div class="grid md:grid-cols-[auto_1fr] gap-0">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=404&q=80"
+            alt="度假住宿图片"
+            class="h-48 w-full object-cover md:h-full"
+            loading="lazy"
+          />
+        </div>
+        <div class="space-y-4 px-6 py-4">
+          <span class="block text-sm font-semibold text-indigo-500"
+            >公司休假</span
+          >
+          <h2>
+            <a
+              href="#"
+              class="block text-lg leading-tight font-medium text-black hover:underline"
+              >为您的团队提供绝佳的住宿</a
+            >
+          </h2>
+          <p class="text-gray-500 text-sm">
+            想带你的团队去度假，享受美食，沐浴阳光吗？我们为你准备了一份度假胜地清单。
+          </p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>响应式布局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gray-200 p-4">
+    <div
+      class="grid md:grid-cols-[240px_1fr] gap-6 max-w-2xl bg-white rounded-xl shadow-lg overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=404&q=80"
+        alt="度假村泳池景观"
+        class="w-full h-48 md:h-full object-cover"
+        loading="lazy"
+      />
+      <div class="space-y-4 p-6">
+        <span
+          class="block text-sm font-semibold text-indigo-500  tracking-wide"
+          >公司休假</span
+        >
+        <a
+          href="#"
+          class="block text-lg font-medium text-black hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-300 rounded"
+        >
+          为您的团队提供绝佳的住宿
+        </a>
+        <p class="text-gray-500">
+          想带你的团队去度假，享受美食，沐浴阳光吗？我们为你准备了一份度假胜地清单。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

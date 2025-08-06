@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>响应式卡片布局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-200 flex items-center justify-center p-4">
+    <!-- 外层容器 -->
+    <article class="max-w-md overflow-hidden bg-white rounded-xl shadow-md transition-shadow hover:shadow-lg md:max-w-2xl">
+      <!-- Grid 容器：移动端单列，桌面端双列（固定图片宽+弹性内容） -->
+      <div class="grid grid-cols-1 md:grid-cols-[240px_1fr]">
+        <!-- 图片：移动端固定高度，桌面端限制最大高度并裁剪 -->
+        <img
+          src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=404&q=80"
+          alt="现代建筑与泳池"
+          class="w-full h-48 md:max-h-[320px] object-cover"
+          loading="lazy"
+        />
+        <!-- 内容区域 -->
+        <div class="p-6 md:p-8">
+          <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+            公司休假
+          </div>
+          <!-- 链接：悬停下划线 + 聚焦环形指示 -->
+          <a
+            href="#"
+            class="mt-1 block text-lg font-medium text-black hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-300 rounded"
+            aria-label="查看团队住宿详情"
+          >
+            为您的团队提供绝佳的住宿
+          </a>
+          <p class="mt-2 text-gray-500">
+            想带你的团队去度假，享受美食，沐浴阳光吗？我们为你准备了一份度假胜地清单。
+          </p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="为您的团队提供绝佳的住宿与度假体验" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>响应式布局 - Grid 版</title>
+  </head>
+
+  <body
+    class="min-h-screen flex items-center justify-center bg-gray-100 p-4 font-sans"
+  >
+    <article
+      class="mx-auto grid w-full max-w-md grid-cols-1 overflow-hidden rounded-xl bg-white shadow-lg md:max-w-2xl md:grid-cols-[1fr_1fr]"
+    >
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?auto=format&fit=crop&w=800&q=80"
+          alt="阳光下的度假村"
+          width="320"
+          height="192"
+          loading="lazy"
+          class="h-48 w-full object-cover md:h-full"
+        />
+      </figure>
+
+      <div class="space-y-3 p-6">
+        <span class="text-sm font-semibold text-indigo-600">公司休假</span>
+        <h2 class="text-lg font-medium leading-tight text-gray-900">
+          <a href="#" class="hover:underline focus:outline-none focus:ring-2"
+            >为您的团队提供绝佳的住宿</a
+          >
+        </h2>
+        <p class="text-sm text-gray-600">
+          想带你的团队去度假，享受美食，沐浴阳光吗？我们为你准备了一份度假胜地清单。
+        </p>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 确保你的 CSS 路径正确 -->
+    <link href="/css/global_css.css" rel="stylesheet" />
+    <title>响应式布局</title>
+  </head>
+  <!-- 1. 使用 Flexbox 实现视窗居中 -->
+  <body class="bg-gray-200 min-h-screen flex items-center justify-center p-4">
+    
+    <!-- 
+      2. 移除 mx-auto (body已负责居中), 移除无效的 space-y-6
+      3. 使用有效的 rounded-xl
+    -->
+    <div class="max-w-md overflow-hidden bg-white rounded-xl shadow-md md:max-w-2xl">
+      <div class="md:flex">
+        <!-- 4. 为图片添加一个包装器，用于控制收缩行为，这是更稳健的做法 -->
+        <div class="md:shrink-0">
+          <img
+            src="https://images.unsplash.com/photo-1637734433731-621aca1c8cb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=404&q=80"
+            alt="Modern building architecture"
+            class="h-48 w-full object-cover md:h-full md:w-48"
+          />
+        </div>
+        <!-- 6. 使用p-8提供更大的内边距，现在它可以正常工作了 -->
+        <div class="p-8">
+          <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+            公司休假
+          </div>
+          <a
+            href="#"
+            class="mt-1 block text-lg font-medium leading-tight text-black hover:underline"
+          >
+            为您的团队提供绝佳的住宿
+          </a>
+          <!-- 7. 使用 <p> 标签更具语义化 -->
+          <p class="mt-2 text-slate-500">
+            想带你的团队去度假，享受美食，沐浴阳光吗？我们为你准备了一份度假胜地清单。
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
