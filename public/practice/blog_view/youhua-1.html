@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global_css.css" />
+    <title>Blog Practice</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-yellow-500 p-4 font-figtree">
+    <article
+      class="bg-white rounded-[20px] border-2 border-black shadow-[8px_8px_0_0_#000] space-y-6 p-6 w-full max-w-[327px] md:max-w-[384px] transition-transform hover:translate-x-1 hover:translate-y-1 hover:shadow-[4px_4px_0_0_#000]"
+    >
+      <figure class="overflow-hidden rounded-xl">
+        <img
+          src="/assets/img/blog/illustration-article.svg"
+          alt="HTML 与 CSS 基础概念插图"
+          width="336"
+          height="200"
+          loading="lazy"
+          decoding="async"
+          class="h-[200px] w-full object-cover"
+        />
+      </figure>
+
+      <header class="space-y-3">
+        <!-- Learning 标签优化 -->
+        <span
+          class="inline-block bg-yellow-500 rounded px-3 py-1 md:px-4 md:py-1.5 font-extrabold text-xs text-black"
+          >Learning</span
+        >
+        
+        <!-- 时间语义化 -->
+        <time 
+          class="block font-medium text-sm text-black" 
+          datetime="2023-12-21"
+        >
+          Published 21 Dec 2023
+        </time>
+        
+        <!-- 标题添加链接语义 -->
+        <h1 class="font-extrabold text-xl leading-tight text-black">
+          <a 
+            href="#" 
+            class="hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 rounded"
+          >
+            HTML & CSS foundations
+          </a>
+        </h1>
+        
+        <!-- 描述文本优化 -->
+        <p class="font-medium text-sm text-gray-500 leading-relaxed">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </header>
+
+      <!-- 作者信息 -->
+      <footer class="flex items-center gap-3">
+        <img
+          src="/assets/img/blog/image-avatar.webp"
+          alt="Greg Hooper 头像"
+          width="32"
+          height="32"
+          loading="lazy"
+          decoding="async"
+          class="h-8 w-8 rounded-full object-cover"
+        />
+        <span class="font-extrabold text-sm text-gray-950">Greg Hooper</span>
+      </footer>
+    </article>
+  </body>
+</html>

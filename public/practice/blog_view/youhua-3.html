@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global_css.css" />
+    <title>Blog Practice</title>
+  </head>
+  <body
+    class="min-h-screen flex items-center justify-center bg-brand-yellow p-4 font-sans"
+  >
+    <!--
+        - 使用 max-w 代替固定 width，响应式更佳
+        - border 和 shadow 结合创建坚实的边框效果
+        - 使用配置文件中的自定义值
+        -->
+    <article
+      class="w-full max-w-sm md:max-w-md bg-white rounded-card shadow-card border-2 border-black p-6 space-y-6"
+    >
+      <figure class="overflow-hidden rounded-card-image">
+        <img
+          src="/assets/img/blog/illustration-article.svg"
+          alt="Abstract illustration for an HTML & CSS article"
+          class="h-full w-full object-cover"
+        />
+      </figure>
+      <section class="space-y-3">
+        <!-- 使用 padding 控制尺寸，更具弹性 -->
+        <div class="inline-block bg-brand-yellow rounded-md py-1 px-3">
+          <span class="font-extrabold text-sm">Learning</span>
+        </div>
+        <p class="text-sm font-medium">Published 21 Dec 2023</p>
+        <!-- 字体大小和行高可以定义为更语义化的类，但此处保持原样以作对比 -->
+        <h1
+          class="font-extrabold text-2xl leading-tight hover:text-brand-yellow cursor-pointer"
+        >
+          HTML & CSS foundations
+        </h1>
+        <p class="text-base text-gray-500">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </section>
+
+      <div class="flex items-center space-x-4">
+        <img
+          src="/assets/img/blog/image-avatar.webp"
+          alt="Author avatar for Greg Hooper"
+          class="h-8 w-8 rounded-full object-cover"
+        />
+        <span class="font-extrabold text-sm">Greg Hooper</span>
+      </div>
+    </article>
+  </body>
+</html>
