@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global_css.css" />
+    <title>Blog Practice</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-yellow-500">
+    <article
+      class="bg-white rounded-[20px] shadow-[8px_7px_1px_3px_rgba(0,0,0,0.1)] shadow-black space-y-6 p-6 w-[327px] outline-2 outline-black"
+    >
+      <figure class="h-[200px] overflow-hidden rounded-lg">
+        <img
+          src="/assets/img/blog/illustration-article.svg"
+          alt="图片"
+          class="h-full w-full object-cover"
+        />
+      </figure>
+      <section class="space-y-3">
+        <p
+          class="flex items-center justify-center bg-yellow-500 rounded-sm text-center font-figtree font-extrabold text-xs text-black leading-[1.5] w-[73px] h-[26px]"
+        >
+          <span class="px-3 py-1">Learning</span>
+        </p>
+        <p class="font-figtree-medium leading-[1.5] text-sm text-black">
+          Published 21 Dec 2023
+        </p>
+        <p class="font-figtree-extrabold text-xl leading-[1.5]">
+          HTML & CSS foundations
+        </p>
+        <span class="font-figtree-medium leading-[1.5] text-sm text-gray-500">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </span>
+      </section>
+      <div class="flex items-center space-x-3 text-gray-950 leading-[1.5] font-bold">
+        <img src="/assets/img/blog/image-avatar.webp" alt="avatar"  class="h-8 w-8 rounded-full"/>
+        <span class="ont-figtree-extrabold text-sm">Greg Hooper</span>
+      </div>
+    </article>
+  </body>
 </html>
