@@ -1,0 +1,12 @@
+# 忽略构建输出目录
+dist/
+
+# 可选：其他常见需要忽略的文件夹
+build/
+.out/
+.next/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.env
