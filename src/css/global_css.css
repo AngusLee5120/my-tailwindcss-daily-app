@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* 字体声明保持你原来的即可 */
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/font/blog/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/font/blog/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Figtree ExtraBold";
+  src: url("/assets/font/blog/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Figtree Medium";
+  src: url("/assets/font/blog/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/font/social/Inter-Regular.woff2") format("woff2-variations");
+}
+
+/* 用自定义属性定义主题令牌，而不是对象语法 */
+@theme {
+  --font-figtree: "Figtree", sans-serif;
+  --font-figtree-extrabold: "Figtree ExtraBold", sans-serif;
+  --font-figtree-medium: "Figtree Medium", sans-serif;
+
+  /* 覆盖默认 sans 栈（用于 class: font-sans） */
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* 如需自定义字重 token（可选） */
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+/* 按钮组件 */
+@layer components {
+  .social-btn {
+    @apply block bg-neutral-800 text-white py-3 rounded-md  font-normal text-xs hover:bg-lime-600;
+  }
+}

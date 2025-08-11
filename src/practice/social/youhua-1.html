@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 修正 CSS 路径，与其他文件保持一致 -->
+    <link rel="stylesheet" href="/src/css/global_css.css" />
+    <meta
+      name="description"
+      content="Jessica Randall's social profile - Front-end developer and avid reader from London"
+    />
+    <title>Jessica Randall - Social Profile</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-black p-4">
+    <!-- 使用 article 更语义化 -->
+    <article
+      class="bg-[#1F1F1F] rounded-2xl pt-8 pb-6 px-6 sm:pt-11 sm:pb-8 sm:px-9 space-y-6 flex flex-col items-center justify-center max-w-sm w-full"
+      role="main"
+    >
+      <!-- 个人头像 -->
+      <figure class="rounded-full overflow-hidden w-20 h-20 sm:w-24 sm:h-24">
+        <img
+          src="/assets/img/social/avatar-jessica.jpeg"
+          alt="Jessica Randall's profile photo"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+
+      <!-- 个人信息 -->
+      <header
+        class="flex flex-col items-center justify-center space-y-4 sm:space-y-6"
+      >
+        <div
+          class="flex flex-col items-center justify-center space-y-1 text-center"
+        >
+          <h1 class="text-white font-bold text-xl sm:text-2xl">
+            Jessica Randall
+          </h1>
+          <p class="text-lime-300 font-bold text-sm">London, United Kingdom</p>
+        </div>
+        <p class="text-gray-400 font-normal text-sm text-center">
+          "Front-end developer and avid reader."
+        </p>
+      </header>
+
+      <!-- 社交链接 -->
+      <nav
+        class="flex flex-col justify-center space-y-3 w-full"
+        aria-label="Social media links"
+      >
+        <a
+          href="#"
+          class="block bg-neutral-800 text-white py-3 w-full text-center rounded-md font-normal text-xs hover:bg-lime-600 hover:text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]"
+          aria-label="Visit Jessica's GitHub profile"
+        >
+          GitHub
+        </a>
+        <a
+          href="#"
+          class="block bg-neutral-800 text-white py-3 w-full text-center rounded-md font-normal text-xs hover:bg-lime-600 hover:text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]"
+          aria-label="Visit Jessica's Frontend Mentor profile"
+        >
+          Frontend Mentor
+        </a>
+        <a
+          href="#"
+          class="block bg-neutral-800 text-white py-3 w-full text-center rounded-md font-normal text-xs hover:bg-lime-600 hover:text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]"
+          aria-label="Connect with Jessica on LinkedIn"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="#"
+          class="block bg-neutral-800 text-white py-3 w-full text-center rounded-md font-normal text-xs hover:bg-lime-600 hover:text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]"
+          aria-label="Follow Jessica on Twitter"
+        >
+          Twitter
+        </a>
+        <a
+          href="#"
+          class="block bg-neutral-800 text-white py-3 w-full text-center rounded-md font-normal text-xs hover:bg-lime-600 hover:text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2 focus:ring-offset-[#1F1F1F]"
+          aria-label="Follow Jessica on Instagram"
+        >
+          Instagram
+        </a>
+      </nav>
+    </article>
+  </body>
+</html>

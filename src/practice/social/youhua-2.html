@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/global_css.css">
+  <title>Social Profile</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-black p-4">
+  <main class="bg-[var(--color-bg-card)] rounded-2xl py-8 px-6 space-y-6 max-w-xs w-full">
+    <!-- 头像 -->
+    <figure class="mx-auto rounded-full overflow-hidden w-24 h-24">
+      <img 
+        src="/assets/img/social/avatar-jessica.jpeg" 
+        alt="Jessica Randall" 
+        class="w-full h-full object-cover"
+      >
+    </figure>
+
+    <!-- 个人信息 -->
+    <div class="text-center space-y-4">
+      <div>
+        <h1 class="text-white font-bold text-2xl"> <!-- 自动继承 --font-figtree -->
+          Jessica Randall
+        </h1>
+        <p class="text-[var(--color-primary)] font-bold text-sm mt-1">
+          London, United Kingdom
+        </p>
+      </div>
+      <p class="text-gray-400 text-sm">
+        "Front-end developer and avid reader."
+      </p>
+    </div>
+
+    <!-- 社交链接 -->
+    <div class="space-y-3">
+      <a href="#" class="social-btn">GitHub</a>
+      <a href="#" class="social-btn">Frontend Mentor</a>
+      <a href="#" class="social-btn">LinkedIn</a> <!-- 修正拼写 -->
+      <a href="#" class="social-btn">Twitter</a>
+      <a href="#" class="social-btn">Instagram</a>
+    </div>
+  </main>
+</body>
+</html>

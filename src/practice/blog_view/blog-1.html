@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/global_css.css" />
+    <link rel="stylesheet" href="/src/css/global_css.css" />
+    <!-- 添加 Tailwind CDN 确保样式生效 -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blog Practice</title>
   </head>
   <body class="min-h-screen flex items-center justify-center bg-yellow-500 p-4">
     <article
-      class="bg-white rounded-[20px] shadow-[8px_7px_1px_3px_rgba(0,0,0,0.1)] shadow-black border-2  space-y-6 p-6 w-[327px] md:w-[384px]  "
+      class="bg-white rounded-[20px] shadow-[8px_7px_1px_3px_rgba(0,0,0,0.1)] shadow-black border-2 space-y-6 p-6 max-w-xs md:max-w-sm"
     >
       <figure class="h-[200px] overflow-hidden rounded-lg">
         <img
-          src="/assets/img/blog/illustration-article.svg"
+          src="../../assets/img/blog/illustration-article.svg"
           alt="图片"
           class="h-full w-full object-cover"
         />
@@ -26,7 +28,10 @@
             >Learning</span
           >
         </div>
-        <time class=" inline-block font-figtree-medium leading-[1.5] text-sm text-black">
+
+        <time
+          class="inline-block font-figtree-medium leading-[1.5] text-sm text-black"
+        >
           Published 21 Dec 2023
         </time>
         <h1 class="font-figtree-extrabold text-xl leading-[1.5]">
@@ -41,7 +46,7 @@
         class="flex items-center space-x-3 text-gray-950 leading-[1.5] font-bold"
       >
         <img
-          src="/assets/img/blog/image-avatar.webp"
+          src="../../assets/img/blog/image-avatar.webp"
           alt="avatar"
           class="h-8 w-8 rounded-full object-cover"
         />
