@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../../css/global_css.css" />
+    <title>Recipe Details</title>
+  </head>
+  <!-- 使用主题颜色和默认字体。font-sans 会自动应用 Outfit 字体 -->
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-brand-eggshell font-sans text-base"
+  >
+    <main class="w-full max-w-2xl rounded-2xl bg-brand-white">
+      <figure>
+        <img
+          class="rounded-t-2xl"
+          src="../../assets/img/recipe/image-omelette.jpeg"
+          alt="A freshly cooked simple omelette on a plate."
+          loading="lazy"
+        />
+      </figure>
+
+      <article class="space-y-8 p-8">
+        <div class="space-y-4">
+          <!-- 使用 font-serif 来调用 Young Serif 字体 -->
+          <h1 class="font-serif text-4xl text-text-dark-charcoal">
+            Simple Omelette Recipe
+          </h1>
+          <p class="leading-relaxed text-text-stone">
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
+
+        <section class="rounded-xl bg-brand-rose-white p-6">
+          <h2 class="text-xl font-bold text-brand-rose-dark">
+            Preparation time
+          </h2>
+          <!-- 使用 space-y-* 添加列表项间距 -->
+          <ul
+            class="mt-4 list-disc space-y-2 pl-5 text-text-stone marker:text-brand-rose-dark"
+          >
+            <li>
+              <span class="font-bold">Total:</span> Approximately 10 minutes
+            </li>
+            <li><span class="font-bold">Preparation:</span> 5 minutes</li>
+            <li><span class="font-bold">Cooking:</span> 5 minutes</li>
+          </ul>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="font-serif text-2xl text-brand-brown">Ingredients</h2>
+          <ul
+            class="list-disc space-y-2 pl-5 text-text-stone marker:text-brand-brown"
+          >
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </section>
+
+        <!-- 使用主题颜色 -->
+        <hr class="border-border-light-grey" />
+
+        <section class="space-y-4">
+          <h2 class="font-serif text-2xl text-brand-brown">Instructions</h2>
+          <ol
+            class="list-decimal space-y-2 pl-5 text-text-stone marker:font-bold marker:text-brand-brown"
+          >
+            <li>
+              <span class="font-bold">Beat the eggs:</span> In a bowl, beat the
+              eggs with a pinch of salt and pepper until they are well mixed.
+              You can add a tablespoon of water or milk for a fluffier texture.
+            </li>
+            <li>
+              <span class="font-bold">Heat the pan:</span> Place a non-stick
+              frying pan over medium heat and add butter or oil.
+            </li>
+            <li>
+              <span class="font-bold">Cook the omelette:</span> Once the butter
+              is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+              the eggs evenly coat the surface.
+            </li>
+            <li>
+              <span class="font-bold">Add fillings (optional):</span> When the
+              eggs begin to set at the edges but are still slightly runny in the
+              middle, sprinkle your chosen fillings over one half of the
+              omelette.
+            </li>
+            <li>
+              <span class="font-bold">Fold and serve:</span> As the omelette
+              continues to cook, carefully lift one edge and fold it over the
+              fillings. Let it cook for another minute, then slide it onto a
+              plate.
+            </li>
+            <li>
+              <span class="font-bold">Enjoy:</span> Serve hot, with additional
+              salt and pepper if needed.
+            </li>
+          </ol>
+        </section>
+
+        <hr class="border-border-light-grey" />
+
+        <section class="space-y-4">
+          <h2 class="font-serif text-2xl text-brand-brown">Nutrition</h2>
+          <p class="text-text-stone">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+
+          <!-- 使用 Grid 布局，并添加垂直内边距 py-3 来创建行间距 -->
+          <ul class="divide-y divide-border-light-grey text-center">
+            <li class="grid grid-cols-2 py-3">
+              <span class="text-text-stone">Calories</span>
+              <span class="font-bold text-brand-brown">277kcal</span>
+            </li>
+            <li class="grid grid-cols-2 py-3">
+              <span class="text-text-stone">Carbs</span>
+              <span class="font-bold text-brand-brown">0g</span>
+            </li>
+            <li class="grid grid-cols-2 py-3">
+              <span class="text-text-stone">Protein</span>
+              <span class="font-bold text-brand-brown">20g</span>
+            </li>
+            <li class="grid grid-cols-2 py-3">
+              <span class="text-text-stone">Fat</span>
+              <span class="font-bold text-brand-brown">22g</span>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
