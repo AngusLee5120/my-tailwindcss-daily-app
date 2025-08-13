@@ -38,16 +38,50 @@
   src: url("/assets/font/social/Inter-Regular.woff2") format("woff2-variations");
 }
 
+/* Young Serif 字体 */
+@font-face {
+  font-family: "Young Serif";
+  src:
+    url("/assets/font/recipe/young-serif/YoungSerif-Regular.woff2")
+      format("woff2"),
+    url("/assets/font/recipe/young-serif/YoungSerif-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outfit 字体 - 推荐使用可变字体 */
+@font-face {
+  font-family: "Outfit";
+  src:
+    url("/assets/font/recipe/outfit/Outfit-Thin.woff2") format("woff2"),
+    url("/assets/font/recipe/outfit/Outfit-Thin.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 用自定义属性定义主题令牌，而不是对象语法 */
 @theme {
+  /* 之前的Figtree 字体 */
   --font-figtree: "Figtree", sans-serif;
   --font-figtree-extrabold: "Figtree ExtraBold", sans-serif;
   --font-figtree-medium: "Figtree Medium", sans-serif;
+  
+  
+  /* 新增的字体族 */
+  --font-young-serif: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+
 
   /* 覆盖默认 sans 栈（用于 class: font-sans） */
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
 
   /* 如需自定义字重 token（可选） */
   --font-weight-normal: 400;
