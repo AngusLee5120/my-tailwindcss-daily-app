@@ -14,6 +14,8 @@ export default defineConfig({
         social: resolve(__dirname, "src/practice/social/youhua-3.html"),
         blog: resolve(__dirname, "src/practice/blog_view/blog-1.html"),
         qrcode: resolve(__dirname, "src/practice/qrcode/qrcode-2.html"),
+        recipe: resolve(__dirname, "src/practice/recipe/recipe.html"),
+        card: resolve(__dirname, "src/practice/card/index.html"),
       },
     },
   },

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/global_css.css" />
+
+    <title>测试peering</title>
+  </head>
+  <body>
+    <main class="flex items-center justify-center min-h-screen p-4">
+      <fieldset>
+        <legend>测试peering</legend>
+        <input
+          type="radio"
+          name="status"
+          id="one"
+          class="peer/one  checked:ring-2 checked:ring-amber-600 checked:ring-offset-2 checked:ring-offset-white"
+          checked
+        />
+        <label for="one" class="peer-checked/one:text-sky-500">选项一</label>
+
+        <input type="radio" name="status" id="two" class="peer/two" />
+        <label for="two" class="peer-checked/two:text-sky-500">选项二</label>
+
+        <!-- 隐藏原生 radio，但保留可聚焦、可点击 -->
+        <input id="two" type="radio" name="status" class="sr-only peer/two" />
+
+        <!-- 自定义圆形 -->
+        <label
+          for="two"
+          class="grid h-5 w-5 cursor-pointer place-items-center rounded-full border border-gray-400 peer-checked/two:ring-2 peer-checked/two:ring-sky-500 peer-checked/two:ring-offset-2 peer-checked/two:ring-offset-white"
+        >
+          <!-- 中间的小圆点 -->
+          <span
+            class="h-2 w-2 rounded-full bg-sky-500 opacity-0 peer-checked/two:opacity-100"
+          ></span>
+        </label>
+
+        <!-- 文字 -->
+        <label for="two" class="ml-2 cursor-pointer">选项二</label>
+        <div class="hidden peer-checked/one:block">
+          我是选项一中的内容，在我被点击的时候，我显示了！
+        </div>
+        <div class="hidden peer-checked/two:block">
+          this is Optin 2 ，在我被点击的时候，我显示了！
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>placeholder测试</legend>
+        <input
+          type="text"
+          placeholder="请输入内容"
+          class="placeholder:text-gray-500 placeholder:italic placeholder:opacity-75 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white"
+        />
+      </fieldset>
+    </main>
+  </body>
+</html>

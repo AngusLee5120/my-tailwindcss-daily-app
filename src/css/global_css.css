@@ -61,6 +61,24 @@
   font-style: normal;
   font-display: swap;
 }
+/* Montserrat 字体 */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/font/card/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* 支持所有字重 */
+  font-style: normal;
+  font-display: swap;
+}
+/* Fraunces 字体 */
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/font/card/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* 用自定义属性定义主题令牌，而不是对象语法 */
 @theme {
@@ -73,25 +91,25 @@
   --font-young-serif: "Young Serif", serif;
   --font-outfit: "Outfit", sans-serif;
 
+  /* 新增Montserrat 字体 */
+  --font-montserrat: "Montserrat", sans-serif;
+  /* 新增Fraunces 字体 */
+  --font-fraunces: "Fraunces", serif;
+
   /* 覆盖默认 sans 栈（用于 class: font-sans） */
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  /* 如需自定义字重 token（可选） */
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
   /* 颜色主题 (Color Palette) */
-  --color-brand-eggshell: #F3E5D8;
-  --color-brand-white: #FFFFFF;
-  --color-brand-rose-white: #FFF7FC;
-  --color-brand-rose-dark: #6F334C;
+  --color-brand-eggshell: #f3e5d8;
+  --color-brand-white: #ffffff;
+  --color-brand-rose-white: #fff7fc;
+  --color-brand-rose-dark: #6f334c;
   --color-brand-brown: #794233;
-  --color-text-stone: #5F5A56;
-  --color-text-dark-charcoal: #312E2C;
-  --color-border-light-grey: #E0E0E0; /* 用于 hr 和边框 */
+  --color-text-stone: #5f5a56;
+  --color-text-dark-charcoal: #312e2c;
+  --color-border-light-grey: #e0e0e0; /* 用于 hr 和边框 */
 
   /* 字体族 (Font Families) */
   /* 定义我们自己的字体 token，方便在任何地方调用 */
