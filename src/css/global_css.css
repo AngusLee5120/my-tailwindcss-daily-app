@@ -91,15 +91,15 @@
   --font-young-serif: "Young Serif", serif;
   --font-outfit: "Outfit", sans-serif;
 
-  /* 新增Montserrat 字体 */
-  --font-montserrat: "Montserrat", sans-serif;
-  /* 新增Fraunces 字体 */
-  --font-fraunces: "Fraunces", serif;
-
   /* 覆盖默认 sans 栈（用于 class: font-sans） */
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* 字体族 (Font Families) */
+  /* 定义我们自己的字体 token，方便在任何地方调用 */
+  --font-serif: "Young Serif", serif;
+  --font-sans: "Outfit", sans-serif;
 
   /* 颜色主题 (Color Palette) */
   --color-brand-eggshell: #f3e5d8;
@@ -110,11 +110,17 @@
   --color-text-stone: #5f5a56;
   --color-text-dark-charcoal: #312e2c;
   --color-border-light-grey: #e0e0e0; /* 用于 hr 和边框 */
+  /* 自定义主题颜色 */
 
-  /* 字体族 (Font Families) */
-  /* 定义我们自己的字体 token，方便在任何地方调用 */
-  --font-serif: "Young Serif", serif;
-  --font-sans: "Outfit", sans-serif;
+  /* Product Card  */
+  /* 新增Montserrat 字体 */
+  --font-montserrat: "Montserrat", sans-serif;
+  /* 新增Fraunces 字体 */
+  --font-fraunces: "Fraunces", serif;
+  /* 涉及到的颜色 */
+  --color-card-bg: #f3eae3;
+  --color-ziti-500-green:#3E8E7E;
+  --color-ziti-700-green:#1E4B43;
 }
 /* 按钮组件 */
 @layer components {
