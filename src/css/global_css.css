@@ -80,6 +80,31 @@
   font-display: swap;
 }
 
+/* Poppins 字体 */
+@font-face {
+  font-family: "Poppins ExtraLight";
+  src: url("/assets/font/fourcards/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("/assets/font/fourcards/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("/assets/font/fourcards/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 用自定义属性定义主题令牌，而不是对象语法 */
 @theme {
   /* 之前的Figtree 字体 */
@@ -119,8 +144,16 @@
   --font-fraunces: "Fraunces", serif;
   /* 涉及到的颜色 */
   --color-card-bg: #f3eae3;
-  --color-ziti-500-green:#3E8E7E;
-  --color-ziti-700-green:#1E4B43;
+  --color-ziti-500-green: #3e8e7e;
+  --color-ziti-700-green: #1e4b43;
+
+  /* Four Cards  */
+  /* 新增 Poppins 字体变量 */
+  --font-poppins-extralight: "Poppins ExtraLight", sans-serif;
+  --font-poppins-regular: "Poppins Regular", sans-serif;
+  --font-poppins-semibold: "Poppins SemiBold", sans-serif;
+
+  
 }
 /* 按钮组件 */
 @layer components {
