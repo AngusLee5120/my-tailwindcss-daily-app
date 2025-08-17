@@ -1,13 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/src/assets/img/favicon-32x32.png">
-    <link rel="stylesheet" href="/src/css/global_css.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/src/css/global_css.css" />
     <title>Four Cards</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-gray-50 max-w-sm mx-auto min-h-screen xl:max-w-7xl transition-all duration-500 ease-in-out">
+    <main
+      class="flex flex-col items-center justify-center gap-14 p-7 font-poppins text-four-cards-text transition-all duration-300 ease-in-out "
+    >
+
+
+
+
+      <article class=" text-center space-y-4 max-w-lg">
+        <div class="flex flex-col gap-1.5">
+          <h1 class="font-thin text-2xl tracking-wide xl:text-4xl transition-all duration-300 ease-in-out">
+            Reliable, efficient delivery
+          </h1>
+          <h2 class="font-semibold text-2xl tracking-wide xl:text-4xl transition-all duration-300 ease-in-out">
+            Powered by Technology
+          </h2>
+        </div>
+        <p class="font-normal text-15-size ">
+          Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+        </p>
+      </article>
+
+
+
+      <div
+        class="flex flex-col items-center justify-center  gap-8 xl:grid xl:grid-rows-3 xl:grid-cols-2 xl:max-w-7xl xl:place-items-center"
+      >
+        <section
+          class="relative flex flex-col p-8 gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-314 h-250 xl:col-span-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <div class="absolute inset-0 bg-supervisor-bar h-1 "></div>
+          <div class="space-y-1.5">
+            <h1 class="font-medium text-xl">Supervisor</h1>
+            <p class="font-normal text-13-size text-four-cards-content">
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <img
+            src="/src/assets/img/fourcards/icon-supervisor.svg"
+            alt=""
+            class="w-16 h-16 object-cover self-end"
+          />
+        </section>
+
+        <div class="flex flex-col gap-8 xl:flex-row xl:col-span-2 transition-all duration-300 ease-in-out">
+          <section
+            class="relative flex flex-col p-8 gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-314 h-250 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl"
+          >
+            <div class="absolute inset-0 bg-team-builder-bar h-1"></div>
+            <div class="space-y-1.5">
+              <h1 class="font-medium text-xl">Team Builder</h1>
+              <p class="font-normal text-13-size text-four-cards-content">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+            <img
+              src="/src/assets/img/fourcards/icon-team-builder.svg"
+              alt=""
+              class="w-16 h-16 object-cover self-end"
+            />
+          </section>
+          <section
+            class="relative flex flex-col p-8 gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-314 h-250 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl"
+          >
+            <div class="absolute inset-0 bg-karma-bar h-1"></div>
+            <div class="space-y-1.5">
+              <h1 class="font-medium text-xl">Karma</h1>
+              <p class="font-normal text-13-size text-four-cards-content">
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+            <img
+              src="/src/assets/img/fourcards/icon-karma.svg"
+              alt=""
+              class="w-16 h-16 object-cover self-end"
+            />
+          </section>
+        </div>
+
+        <section
+          class="relative flex flex-col p-8 gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-314 h-250 xl:col-span-2 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <div class="absolute inset-0 bg-calculator-bar h-1"></div>
+          <div class="space-y-1.5">
+            <h1 class="font-medium text-xl">Calculator</h1>
+            <p class="font-normal text-13-size text-four-cards-content">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+          <img
+            src="/src/assets/img/fourcards/icon-calculator.svg"
+            alt=""
+            class="w-16 h-16 object-cover self-end"
+          />
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

@@ -82,7 +82,7 @@
 
 /* Poppins 字体 */
 @font-face {
-  font-family: "Poppins ExtraLight";
+  font-family: "Poppins";
   src: url("/assets/font/fourcards/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
@@ -90,7 +90,7 @@
 }
 
 @font-face {
-  font-family: "Poppins Regular";
+  font-family: "Poppins";
   src: url("/assets/font/fourcards/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -98,7 +98,7 @@
 }
 
 @font-face {
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins";
   src: url("/assets/font/fourcards/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
@@ -149,15 +149,37 @@
 
   /* Four Cards  */
   /* 新增 Poppins 字体变量 */
-  --font-poppins-extralight: "Poppins ExtraLight", sans-serif;
-  --font-poppins-regular: "Poppins Regular", sans-serif;
-  --font-poppins-semibold: "Poppins SemiBold", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  /* 新增颜色 */
+  --color-four-cards-text: #4d4f62;
+  --color-four-cards-content: #6a7178;
 
-  
+  /* 彩色条颜色 */
+  --color-supervisor-bar: hsl(180, 62%, 55%);
+  --color-team-builder-bar: hsl(120, 62%, 55%);
+  --color-karma-bar: hsl(60, 62%, 55%);
+  --color-calculator-bar: hsl(0, 62%, 55%);
+
+  /* 圆角尺寸 8px */
+  --radius-8: 8px;
+  /* 字体大小 15px*/
+  --text-15-size: 15px;
+  --text-13-size: 13px;
+
+  /* 组件宽高度 */
+  --width-314: 314px;
+  --height-250: 250px;
+
 }
+
 /* 按钮组件 */
 @layer components {
   .social-btn {
     @apply block bg-neutral-800 text-white py-3 rounded-md  font-normal text-xs hover:bg-lime-600;
   }
 }
+/* 自定义字体 */
+@utility text-15-size {
+  font-size: var(--text-15-size);
+}
+
