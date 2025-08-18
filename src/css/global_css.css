@@ -156,9 +156,9 @@
 
   /* 彩色条颜色 */
   --color-supervisor-bar: hsl(180, 62%, 55%);
-  --color-team-builder-bar: hsl(120, 62%, 55%);
-  --color-karma-bar: hsl(60, 62%, 55%);
-  --color-calculator-bar: hsl(0, 62%, 55%);
+  --color-team-builder-bar: hsl(0, 78%, 62%);
+  --color-karma-bar: hsl(34, 97%, 64%);
+  --color-calculator-bar: hsl(212, 86%, 64%);
 
   /* 圆角尺寸 8px */
   --radius-8: 8px;
