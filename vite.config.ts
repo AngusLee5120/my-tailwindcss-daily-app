@@ -16,6 +16,7 @@ export default defineConfig({
         qrcode: resolve(__dirname, "src/practice/qrcode/qrcode-2.html"),
         recipe: resolve(__dirname, "src/practice/recipe/recipe.html"),
         card: resolve(__dirname, "src/practice/card/card.html"),
+        fourcards: resolve(__dirname, "src/practice/fourcards/four-cards.html"),
       },
     },
   },
