@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/src/css/global_css.css" />
+    <title>Four Cards - Feature Showcase</title>
+    <meta name="description" content="Discover our AI-powered tools featuring Supervisor, Team Builder, Karma, and Calculator for efficient project delivery.">
+  </head>
+  <body class="bg-gray-50 min-h-screen font-poppins">
+    <div class="container mx-auto max-w-sm xl:max-w-7xl px-4 xl:px-6">
+      <main
+        class="flex flex-col items-center justify-center gap-14 py-12 xl:py-20 text-four-cards-text"
+        role="main"
+      >
+        <!-- Hero Section -->
+        <header class="text-center space-y-4 max-w-xl xl:max-w-2xl">
+          <hgroup class="space-y-1.5">
+            <h1
+              class="font-thin text-2xl tracking-wide xl:text-4xl transition-all duration-300 ease-in-out"
+            >
+              Reliable, efficient delivery
+              <span class="block font-semibold">Powered by Technology</span>
+            </h1>
+          </hgroup>
+          <p class="font-normal text-15-size xl:text-lg leading-relaxed transition-all duration-300">
+            Our Artificial Intelligence powered tools use millions of project data
+            points to ensure that your project is successful
+          </p>
+        </header>
+
+        <!-- Features Grid -->
+        <section 
+          class="w-full max-w-sm xl:max-w-6xl"
+          aria-label="Feature cards"
+        >
+          <div
+            class="grid grid-cols-1 gap-6 xl:grid-cols-3 xl:grid-rows-4 xl:gap-8 place-items-center"
+          >
+            <!-- Supervisor Card -->
+            <article
+              class="feature-card xl:col-start-1 xl:row-start-2 xl:row-span-2"
+              role="article"
+            >
+              <div class="absolute inset-x-0 top-0 bg-supervisor-bar h-1 rounded-t-8"></div>
+              <div class="space-y-1.5">
+                <h2 class="font-semibold text-xl xl:text-2xl">Supervisor</h2>
+                <p class="font-normal text-13-size xl:text-sm text-four-cards-content leading-relaxed">
+                  Monitors activity to identify project roadblocks
+                </p>
+              </div>
+              <img
+                src="/src/assets/img/fourcards/icon-supervisor.svg"
+                alt="Supervisor monitoring dashboard icon"
+                class="w-14 h-14 xl:w-16 xl:h-16 object-contain self-end"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Team Builder Card -->
+            <article
+              class="feature-card xl:col-start-2 xl:row-start-1 xl:row-span-2"
+              role="article"
+            >
+              <div class="absolute inset-x-0 top-0 bg-team-builder-bar h-1 rounded-t-8"></div>
+              <div class="space-y-1.5">
+                <h2 class="font-semibold text-xl xl:text-2xl">Team Builder</h2>
+                <p class="font-normal text-13-size xl:text-sm text-four-cards-content leading-relaxed">
+                  Scans our talent network to create the optimal team for your
+                  project
+                </p>
+              </div>
+              <img
+                src="/src/assets/img/fourcards/icon-team-builder.svg"
+                alt="Team collaboration and building icon"
+                class="w-14 h-14 xl:w-16 xl:h-16 object-contain self-end"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Karma Card -->
+            <article
+              class="feature-card xl:col-start-2 xl:row-start-3 xl:row-span-2"
+              role="article"
+            >
+              <div class="absolute inset-x-0 top-0 bg-karma-bar h-1 rounded-t-8"></div>
+              <div class="space-y-1.5">
+                <h2 class="font-semibold text-xl xl:text-2xl">Karma</h2>
+                <p class="font-normal text-13-size xl:text-sm text-four-cards-content leading-relaxed">
+                  Regularly evaluates our talent to ensure quality
+                </p>
+              </div>
+              <img
+                src="/src/assets/img/fourcards/icon-karma.svg"
+                alt="Quality evaluation and karma system icon"
+                class="w-14 h-14 xl:w-16 xl:h-16 object-contain self-end"
+                loading="lazy"
+              />
+            </article>
+
+            <!-- Calculator Card -->
+            <article
+              class="feature-card xl:col-start-3 xl:row-start-2 xl:row-span-2"
+              role="article"
+            >
+              <div class="absolute inset-x-0 top-0 bg-calculator-bar h-1 rounded-t-8"></div>
+              <div class="space-y-1.5">
+                <h2 class="font-semibold text-xl xl:text-2xl">Calculator</h2>
+                <p class="font-normal text-13-size xl:text-sm text-four-cards-content leading-relaxed">
+                  Uses data from past projects to provide better delivery estimates
+                </p>
+              </div>
+              <img
+                src="/src/assets/img/fourcards/icon-calculator.svg"
+                alt="Project calculation and estimation tool icon"
+                class="w-14 h-14 xl:w-16 xl:h-16 object-contain self-end"
+                loading="lazy"
+              />
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

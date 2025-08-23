@@ -177,6 +177,17 @@
   .social-btn {
     @apply block bg-neutral-800 text-white py-3 rounded-md  font-normal text-xs hover:bg-lime-600;
   }
+
+  /* 添加到 global_css.css 的 @layer components 部分 */
+@layer components {
+  .feature-card {
+    @apply relative flex flex-col p-6 xl:p-8 gap-6 xl:gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-full max-w-sm xl:max-w-none h-auto min-h-[250px] transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2;
+  }
+  
+  .container {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
 }
 /* 自定义字体 */
 @utility text-15-size {
