@@ -105,6 +105,27 @@
   font-display: swap;
 }
 
+
+/* Testimonials */
+
+/* 添加 BarlowSemiCondensed 字体 */
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url("/assets/font/testimonials/BarlowSemiCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url("/assets/font/testimonials/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* 用自定义属性定义主题令牌，而不是对象语法 */
 @theme {
   /* 之前的Figtree 字体 */
@@ -165,10 +186,27 @@
   /* 字体大小 15px*/
   --text-15-size: 15px;
   --text-13-size: 13px;
+  --text-11-size: 11px;
 
   /* 组件宽高度 */
   --width-314: 314px;
   --height-250: 250px;
+
+/* 添加 Testimonials */
+
+/* 添加 BarlowSemiCondensed 字体 */
+--font-barlow: "BarlowSemiCondensed", sans-serif;
+
+/* 背景色 */
+--color-testimonials-bg: #F6F5F6;
+/* section 背景色 */
+--color-danile-section-bg: hsl(263, 55%, 52%);
+/* 头像背景色 */
+--color-avatar-bg: hsl(264, 82%, 80%);
+--color-avatar-border: hsl(260, 100%, 95%);
+
+/* 间距 17px */
+--spacing-17: 17px;
 
 }
 
