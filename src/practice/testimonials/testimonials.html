@@ -11,31 +11,32 @@
     <link rel="stylesheet" href="/src/css/global_css.css" />
     <title>Testimonials Page</title>
   </head>
-  <body class="bg-testimonials-bg min-h-screen">
-    <main
-      class="flex flex-col justify-center gap-8 items-center max-w-sm mx-auto py-16 font-barlow text-13-size"
-    >
+  <body class="bg-testimonials-bg ">
+    <main class="flex flex-col gap-8 max-w-sm mx-auto pt-16 font-barlow text-13-size transition-all duration-300 ease-in-out  md:max-w-xl md:grid md:grid-cols-2  2xl:max-w-7xl  2xl:grid-cols-4">
+      <!-- Daniel Clifford  -->
       <article
-        class="flex flex-col gap-4 p-8 rounded-lg bg-danile-section-bg text-white"
+        class="flex flex-col gap-4 p-8 rounded-lg bg-danile-section-bg text-white  shadow-testimonials-normal  md:col-span-2 2xl:col-start-2 2xl:col-span-2 "
       >
-        <figure class="flex gap-[var(--spacing-17)] items-center">
+        <figure class="flex gap-17">
           <img
             src="/src/assets/img/testimonials/image-daniel.jpg"
             alt="Testimonial 1"
-            class="w-7 h-7 rounded-full object-cover ring-2 ring-avatar-bg"
+            class="w-7 h-7 rounded-full object-cover ring-2 ring-danile-avatar-bg"
             lazyoading="lazy"
           />
           <figcaption>
-            <p class="font-medium">Daniel Clifford</p>
-            <p class="text-11-size">Verified Graduate</p>
+            <p class="font-medium leading-130">Daniel Clifford</p>
+            <p class="text-11-size leading-110 text-purple-50">
+              Verified Graduate
+            </p>
           </figcaption>
         </figure>
-        <p class="font-semibold text-xl">
+        <p class="font-semibold text-xl leading-120">
           I received a job offer mid-course, and the subjects I learned were
           current, if not more so, in the company I joined. I honestly feel I
           got every penny’s worth.
         </p>
-        <p class="font-medium">
+        <p class="font-medium leading-140 text-purple-50">
           "I was an EMT for many years before I joined the bootcamp. I’ve been
           looking to make a transition and have heard some people who had an
           amazing experience here. I signed up for the free intro course and
@@ -45,67 +46,79 @@
           a Software Engineer at a VR startup."
         </p>
       </article>
-
-      <article class="flex flex-col gap-4 p-8 rounded-lg">
-        <figure class="flex gap-4 items-center">
+      <!-- Jonathan Walters -->
+      <article
+        class="flex flex-col gap-4 p-8 rounded-lg bg-jonathan-section-bg text-white shadow-testimonials-normal 2xl:col-start-4 "
+      >
+        <figure class="flex gap-17">
           <img
             src="/src/assets/img/testimonials/image-jonathan.jpg"
             alt="Testimonial 2"
-            class="w-7 h-7 rounded-full object-cover "
+            class="w-7 h-7 rounded-full object-cover ring-2 ring-jonathan-avatar-bg"
             lazyoading="lazy"
           />
           <figcaption>
-            <p class="font-semibold">Jonathan Walters</p>
-            <p>Verified Graduate</p>
+            <p class="font-medium leading-130">Jonathan Walters</p>
+            <p class="text-11-size leading-110 text-gray-300">
+              Verified Graduate
+            </p>
           </figcaption>
         </figure>
-        <p>The team was very supportive and kept me motivated</p>
-        <p class="">
+        <p class="font-semibold text-xl leading-120">
+          The team was very supportive and kept me motivated
+        </p>
+        <p class="font-medium leading-140 text-gray-100">
           "I started as a total newbie with virtually no coding skills. I now
           work as a mobile engineer for a big company. This was one of the best
           investments I’ve made in myself."
         </p>
       </article>
-
-      <article class="flex flex-col gap-4 p-8 rounded-lg">
-        <figure class="flex gap-4 items-center">
+      <!-- Jeanette Harmon -->
+      <article class="flex flex-col gap-4 p-8 rounded-lg bg-white shadow-testimonials-normal text-black 2xl:col-start-2 2xl:col-end-3">
+        <figure class="flex gap-17">
           <img
             src="/src/assets/img/testimonials/image-jeanette.jpg"
             alt="Testimonial 3"
-            class="w-7 h-7 rounded-full object-cover"
+            class="w-7 h-7 rounded-full object-cover ring-2 ring-white"
             lazyoading="lazy"
           />
           <figcaption>
-            <p class="font-semibold">Jeanette Harmon</p>
-            <p>Verified Graduate</p>
+            <p class="font-medium leading-130 text-gray-500">Jeanette Harmon</p>
+            <p class="text-11-size leading-110 text-gray-400">
+              Verified Graduate
+            </p>
           </figcaption>
         </figure>
-        <p>An overall wonderful and rewarding experience</p>
-        <p class="">
+        <p class="font-semibold text-xl leading-120 text-gray-500">
+          An overall wonderful and rewarding experience
+        </p>
+        <p class="font-medium leading-140 text-gray-400">
           "Thank you for the wonderful experience! I now have a job I really
           enjoy, and make a good living while doing something I love."
         </p>
       </article>
-
-      <article class="flex flex-col gap-4 p-8 rounded-lg">
-        <figure class="flex gap-4 items-center">
+      <!-- Patrick Abrams -->
+      <article
+        class="flex flex-col gap-4 p-8 rounded-lg bg-patrick-avatar-bg text-white shadow-testimonials-normal md:col-span-2 2xl:col-start-3 2xl:col-span-2"
+      >
+        <figure class="flex gap-17">
           <img
             src="/src/assets/img/testimonials/image-patrick.jpg"
             alt="Testimonial 4"
-            class="w-7 h-7 rounded-full object-cover"
+            class="w-7 h-7 rounded-full object-cover ring-2 ring-jonathan-avatar-bg"
             lazyoading="lazy"
           />
           <figcaption>
-            <p class="font-semibold">Patrick Abrams</p>
-            <p>Verified Graduate</p>
+            <p class="font-medium leading-130">Patrick Abrams</p>
+            <p class="text-11-size leading-110">Verified Graduate</p>
           </figcaption>
         </figure>
-        <p>
+        <p class="font-semibold text-xl leading-120 text-gray-200">
           Awesome teaching support from TAs who did the bootcamp themselves.
           Getting guidance from them and learning from their experiences was
           easy.
         </p>
-        <p class="">
+        <p class="font-medium leading-140 text-gray-100">
           "The staff seem genuinely concerned about my progress which I find
           really refreshing. The program gave me the confidence necessary to be
           able to go out in the world and present myself as a capable junior
@@ -114,22 +127,26 @@
           people."
         </p>
       </article>
-
-      <article class="flex flex-col gap-4 p-8 rounded-lg">
-        <figure class="flex gap-4">
+      <!-- Kira Whittle -->
+      <article class="flex flex-col gap-4 p-8 rounded-lg bg-white shadow-testimonials-normal md:col-span-2 2xl:col-start-1 2xl:col-end-2 2xl:row-start-1 2xl:row-span-2">
+        <figure class="flex gap-17">
           <img
             src="/src/assets/img/testimonials/image-kira.jpg"
             alt="Testimonial 5"
-            class="w-7 h-7 rounded-full object-cover"
+            class="w-7 h-7 rounded-full object-cover ring-2 ring-white"
             lazyoading="lazy"
           />
-          <figcaption class="">
-            <p class="font-semibold">Kira Whittle</p>
-            <p>Verified Graduate</p>
+          <figcaption>
+            <p class="font-medium leading-130 text-gray-500">Kira Whittle</p>
+            <p class="text-11-size leading-110 text-gray-300">
+              Verified Graduate
+            </p>
           </figcaption>
         </figure>
-        <p>Such a life-changing experience. Highly recommended!</p>
-        <p class="">
+        <p class="font-medium leading-140 text-xl text-gray-500">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="font-medium leading-140 text-gray-400">
           "Before joining the bootcamp, I’ve never written a line of code. I
           needed some structure from professionals who can help me learn
           programming step by step. I was encouraged to enroll by a former

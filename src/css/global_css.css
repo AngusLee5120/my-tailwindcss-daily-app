@@ -105,13 +105,13 @@
   font-display: swap;
 }
 
-
 /* Testimonials */
 
 /* 添加 BarlowSemiCondensed 字体 */
 @font-face {
   font-family: "BarlowSemiCondensed";
-  src: url("/assets/font/testimonials/BarlowSemiCondensed-Medium.ttf") format("truetype");
+  src: url("/assets/font/testimonials/BarlowSemiCondensed-Medium.ttf")
+    format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -119,12 +119,12 @@
 
 @font-face {
   font-family: "BarlowSemiCondensed";
-  src: url("/assets/font/testimonials/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+  src: url("/assets/font/testimonials/BarlowSemiCondensed-SemiBold.ttf")
+    format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
 
 /* 用自定义属性定义主题令牌，而不是对象语法 */
 @theme {
@@ -192,22 +192,33 @@
   --width-314: 314px;
   --height-250: 250px;
 
-/* 添加 Testimonials */
+  /* 添加 Testimonials */
 
-/* 添加 BarlowSemiCondensed 字体 */
---font-barlow: "BarlowSemiCondensed", sans-serif;
+  /* 添加 BarlowSemiCondensed 字体 */
+  --font-barlow: "BarlowSemiCondensed", sans-serif;
 
-/* 背景色 */
---color-testimonials-bg: #F6F5F6;
-/* section 背景色 */
---color-danile-section-bg: hsl(263, 55%, 52%);
-/* 头像背景色 */
---color-avatar-bg: hsl(264, 82%, 80%);
---color-avatar-border: hsl(260, 100%, 95%);
+  /* 背景色 */
+  --color-testimonials-bg: #f6f5f6;
+  /* section 背景色 */
+  --color-danile-section-bg: hsl(263, 55%, 52%);
+  --color-jonathan-section-bg: hsl(217, 19%, 35%);
 
-/* 间距 17px */
---spacing-17: 17px;
+  /* 头像背景色 */
+  --color-avatar-border: hsl(260, 100%, 95%);
+  --color-danile-avatar-bg: hsl(264, 82%, 80%);
+  --color-jonathan-avatar-bg: hsl(217, 19%, 35%);
+  --color-patrick-avatar-bg: hsl(219, 29%, 14%);
 
+  /* 间距 17px */
+  --spacing-17: 17px;
+  /* 自定义line height*/
+  --leading-110: 1.1;
+  --leading-120: 1.2;
+  --leading-130: 1.3;
+  --leading-140: 1.4;
+
+  /* 自定义阴影*/
+  --shadow-testimonials-normal: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
 }
 
 /* 按钮组件 */
@@ -217,18 +228,19 @@
   }
 
   /* 添加到 global_css.css 的 @layer components 部分 */
-@layer components {
-  .feature-card {
-    @apply relative flex flex-col p-6 xl:p-8 gap-6 xl:gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-full max-w-sm xl:max-w-none h-auto min-h-[250px] transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2;
-  }
-  
-  .container {
-    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
-  }
-}
-}
-/* 自定义字体 */
-@utility text-15-size {
-  font-size: var(--text-15-size);
-}
+  @layer components {
+    .feature-card {
+      @apply relative flex flex-col p-6 xl:p-8 gap-6 xl:gap-8 bg-white rounded-8 shadow-lg overflow-hidden w-full max-w-sm xl:max-w-none h-auto min-h-[250px] transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2;
+    }
 
+    .container {
+      @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+    }
+  }
+}
+/* 自定义工具类 */
+@layer utilities {
+  .text-15-size {
+    font-size: var(--text-15-size);
+  }
+}
