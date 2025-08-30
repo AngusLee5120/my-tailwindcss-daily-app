@@ -3,14 +3,14 @@
 /* 字体声明保持你原来的即可 */
 @font-face {
   font-family: "Figtree";
-  src: url("/assets/font/blog/Figtree-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/font/blog/Figtree-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Figtree";
-  src: url("/assets/font/blog/Figtree-Italic-VariableFont_wght.ttf")
+  src: url("../assets/font/blog/Figtree-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: italic;
@@ -18,14 +18,14 @@
 }
 @font-face {
   font-family: "Figtree ExtraBold";
-  src: url("/assets/font/blog/static/Figtree-ExtraBold.ttf") format("truetype");
+  src: url("../assets/font/blog/static/Figtree-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Figtree Medium";
-  src: url("/assets/font/blog/static/Figtree-Medium.ttf") format("truetype");
+  src: url("../assets/font/blog/static/Figtree-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -35,16 +35,16 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/font/social/Inter-Regular.woff2") format("woff2-variations");
+  src: url("../assets/font/social/Inter-Regular.woff2") format("woff2-variations");
 }
 
 /* Young Serif 字体 */
 @font-face {
   font-family: "Young Serif";
   src:
-    url("/assets/font/recipe/young-serif/YoungSerif-Regular.woff2")
+    url("../assets/font/recipe/young-serif/YoungSerif-Regular.woff2")
       format("woff2"),
-    url("/assets/font/recipe/young-serif/YoungSerif-Regular.woff")
+    url("../assets/font/recipe/young-serif/YoungSerif-Regular.woff")
       format("woff");
   font-weight: 400;
   font-style: normal;
@@ -55,8 +55,8 @@
 @font-face {
   font-family: "Outfit";
   src:
-    url("/assets/font/recipe/outfit/Outfit-Thin.woff2") format("woff2"),
-    url("/assets/font/recipe/outfit/Outfit-Thin.woff") format("woff");
+    url("../assets/font/recipe/outfit/Outfit-Thin.woff2") format("woff2"),
+    url("../assets/font/recipe/outfit/Outfit-Thin.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 /* Montserrat 字体 */
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/font/card/Montserrat-VariableFont_wght.ttf")
+  src: url("../assets/font/card/Montserrat-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 900; /* 支持所有字重 */
   font-style: normal;
@@ -73,7 +73,7 @@
 /* Fraunces 字体 */
 @font-face {
   font-family: "Fraunces";
-  src: url("/assets/font/card/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+  src: url("../assets/font/card/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
     format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -83,7 +83,7 @@
 /* Poppins 字体 */
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/fourcards/Poppins-ExtraLight.ttf") format("truetype");
+  src: url("../assets/font/fourcards/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -91,7 +91,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/fourcards/Poppins-Regular.ttf") format("truetype");
+  src: url("../assets/font/fourcards/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -99,7 +99,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/fourcards/Poppins-SemiBold.ttf") format("truetype");
+  src: url("../assets/font/fourcards/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -110,7 +110,7 @@
 /* 添加 BarlowSemiCondensed 字体 */
 @font-face {
   font-family: "BarlowSemiCondensed";
-  src: url("/assets/font/testimonials/BarlowSemiCondensed-Medium.ttf")
+  src: url("../assets/font/testimonials/BarlowSemiCondensed-Medium.ttf")
     format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -119,7 +119,7 @@
 
 @font-face {
   font-family: "BarlowSemiCondensed";
-  src: url("/assets/font/testimonials/BarlowSemiCondensed-SemiBold.ttf")
+  src: url("../assets/font/testimonials/BarlowSemiCondensed-SemiBold.ttf")
     format("truetype");
   font-weight: 600;
   font-style: normal;

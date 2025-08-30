@@ -17,7 +17,7 @@ export default defineConfig({
         recipe: resolve(__dirname, "src/practice/recipe/recipe.html"),
         card: resolve(__dirname, "src/practice/card/card.html"),
         fourcards: resolve(__dirname, "src/practice/fourcards/four-cards.html"),
-        testmonials: resolve(__dirname, "src/practice/testmonials/testmonials.html"),
+        testimonials: resolve(__dirname, "src/practice/testimonials/testimonials.html"),
       },
     },
   },
