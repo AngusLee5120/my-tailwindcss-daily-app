@@ -18,6 +18,7 @@ export default defineConfig({
         card: resolve(__dirname, "src/practice/card/card.html"),
         fourcards: resolve(__dirname, "src/practice/fourcards/four-cards.html"),
         testimonials: resolve(__dirname, "src/practice/testimonials/testimonials.html"),
+        meetlanding: resolve(__dirname, "src/practice/meetlanding/meetlanding.html"),
       },
     },
   },
