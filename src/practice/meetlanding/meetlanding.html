@@ -11,81 +11,167 @@
     <link rel="stylesheet" href="/src/css/global_css.css" />
     <title>Meeting Landing Page</title>
   </head>
-  <body>
-    <main>
+  <body class="w-full min-h-screen font-redhat">
+    <main
+      class="flex flex-col items-center justify-center gap-16 px-8 my-1440:px-20 pt-12 my-1440:pt-20 pb-16 font-medium"
+    >
       <img src="/src/assets/img/meetlanding/logo.svg" alt="logo" />
-      <figure>
+
+      <section
+        class="flex flex-col my-1440:flex-row items-center justify-center text-center gap-12 w-full"
+      >
+        <!-- 2个图片 - mobile -->
+        <figure
+          class="flex justify-center items-center md:hidden my-1440:hidden gap-4 w-screen -mx-8 h-40"
+        >
+          <img
+            src="/src/assets/img/meetlanding/desktop/image-hero-left.png"
+            alt="Hero Left"
+            class="h-full object-cover"
+          />
+          <img
+            src="/src/assets/img/meetlanding/desktop/image-hero-right.png"
+            alt="Hero Right"
+            class="h-full object-cover"
+          />
+        </figure>
+        <!-- 单个图片tablet -->
+        <img
+          src="/src/assets/img/meetlanding/tablet/image-hero.png"
+          alt=""
+          class="object-cover hidden md:block my-1440:hidden h-auto w-screen -mx-8 my-1440:-mx-20"
+        />
+        <!-- 单个图片desktop -->
         <img
           src="/src/assets/img/meetlanding/desktop/image-hero-left.png"
           alt="Hero Left"
+          class="h-full object-cover hidden my-1440:block "
         />
+
+        <article class="flex flex-col gap-6 my-1440:gap-8 max-w-md">
+          <h1
+            class="font-black text-40-size md:text-5xl my-1440:text-64-size leading-110"
+          >
+            Group Chat for Everyone
+          </h1>
+          <p class="leading-150 text-character-gray">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-[17px]"
+          >
+            <button
+              class="px-10 py-4 rounded-29 text-white font-black bg-btn-blue space-x-1 cursor-pointer"
+            >
+              <span>Download</span>
+              <span class="text-character-button">v1.3</span>
+            </button>
+            <button
+              class="px-10 py-4 rounded-29 font-black bg-btn-purple text-white cursor-pointer"
+            >
+              What is it?
+            </button>
+          </div>
+        </article>
+        <!-- 单个图片desktop -->
         <img
           src="/src/assets/img/meetlanding/desktop/image-hero-right.png"
           alt="Hero Right"
+          class="h-full object-cover hidden my-1440:block"
         />
-      </figure>
-      <section>
-        <h1>Group Chat for Everyone</h1>
-        <p>
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div>
-          <button>Download v1.3</button>
-          <button>What is it?</button>
-        </div>
       </section>
 
-      <section>
-        <div>
-          <div></div>
-          <div>01</div>
+      <section
+        class="flex flex-col items-center justify-center gap-16 text-center"
+      >
+        <div class="flex flex-col items-center justify-center h-136">
+          <div class="h-20 border-1 border-ring-line"></div>
+          <div
+            class="h-14 w-14 font-black rounded-full border-1 border-ring-line text-character-gray flex items-center justify-center"
+          >
+            01
+          </div>
         </div>
-        <figure>
+        <figure class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl">
           <img
             src="/src/assets/img/meetlanding/desktop/image-woman-in-videocall.jpg"
-            alt=""
+            alt="女性在视频通话中"
+            class="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="/src/assets/img/meetlanding/desktop/image-women-videochatting.jpg"
-            alt=""
+            alt="女性们在视频聊天"
+            class="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="/src/assets/img/meetlanding/desktop/image-men-in-meeting.jpg"
-            alt=""
+            alt="男性们在会议中"
+            class="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="/src/assets/img/meetlanding/desktop/image-man-texting.jpg"
-            alt=""
+            alt="男性在发短信"
+            class="w-full h-auto object-cover rounded-lg"
           />
         </figure>
-        <article>
-          <h1>Built for modern use</h1>
-          <p>Smarter meetings, all in one place</p>
-          <p>
+        <article class="flex flex-col gap-4 max-w-lg">
+          <h1
+            class="font-black text-xs leading-110 text-character-green tracking-4 uppercase"
+          >
+            Built for modern use
+          </h1>
+          <p
+            class="font-black text-32-size md:text-4xl my-1440:text-40-size leading-110"
+          >
+            Smarter meetings, all in one place
+          </p>
+          <p class="leading-150 text-character-gray">
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
             invite-only team access, data encryption, and data export.
           </p>
         </article>
       </section>
-
-      <section>
-        <div>
-          <div></div>
-          <div>01</div>
-        </div>
-        <article>
-          <p>Experience more together</p>
-          <p>
-            Stay connected with reliable HD meetings and unlimited one-on-one
-            and group video sessions.
-          </p>
-          <div>
-            <button>Download v1.3</button>
-          </div>
-        </article>
-      </section>
     </main>
+
+    <div class="flex flex-col items-center justify-center h-136">
+      <div class="h-20 border-1 border-ring-line"></div>
+      <div
+        class="h-14 w-14 rounded-full border-1 font-black border-ring-line text-character-gray bg-white flex items-center justify-center z-1"
+      >
+        02
+      </div>
+    </div>
+
+    <footer
+      class="relative bg-hero-responsive bg-cover w-full flex flex-col items-center justify-center text-center -mt-7"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-character-green opacity-90"
+      ></div>
+
+      <article
+        class="flex flex-col gap-6 py-16 px-8 text-white z-1 md:max-w-lg my-1440:max-w-6xl my-1440:flex-row my-1440:gap-8 my-1440:text-left my-1440:flex-nowrap"
+      >
+        <h1
+          class="font-black text-32-size md:text-4xl my-1440:text-40-size leading-110"
+        >
+          Experience more together
+        </h1>
+        <p class="leading-150 my-1440:text-[18px]">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <div class="flex-none">
+          <button
+            class="px-10 py-4 rounded-29 font-black bg-btn-purple space-x-1 cursor-pointer"
+          >
+            <span>Download</span>
+            <span class="text-character-purple">v1.3</span>
+          </button>
+        </div>
+      </article>
+    </footer>
   </body>
 </html>
