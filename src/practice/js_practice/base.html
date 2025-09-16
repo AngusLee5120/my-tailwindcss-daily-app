@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="base.css" />
+    <title>DOM Selection Demo</title>
+    <script type="module">
+      import { getClassList } from "/src/js/base.js";
+      var btn = document.getElementById("test-btn");
+      btn.addEventListener("click", getClassList);
+    </script>
+  </head>
+  <body>
+    <h1 id="header">JavaScript DOM Selection Demo</h1>
+    <p>Welcome to The JavaScript DOM Selection Demo application!</p>
+
+    <div class="content">
+      <p class="text">This is the first paragraph in the content section.</p>
+      <p class="text">This is the second paragraph in the content section.</p>
+    </div>
+
+    <div class="content box">
+      <p class="box-text">This is the first box.</p>
+    </div>
+    <div class="content box">
+      <p class="box-text">This is the second box.</p>
+    </div>
+
+    <p>Below is a list of working days:</p>
+    <ul id="item-list" class="list">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+    </ul>
+    <button id="test-btn">测试事件绑定</button>
+    <p>Select a base color from the following:</p>
+    <form id="sample-form">
+      <input type="radio" name="color" value="Red" /> Red <br />
+      <input type="radio" name="color" value="Green" /> Green <br />
+      <input type="radio" name="color" value="Blue" /> Blue <br />
+    </form>
+  </body>
+</html>
